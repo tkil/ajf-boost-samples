@@ -1,0 +1,5 @@
+Unless otherwise specified, all the code in this repository is written
+by Anthony Foiani <anthony.foiani@gmail.com> and is made available
+under the Boost Software License v1.0, which can be found at:
+
+http://www.boost.org/LICENSE_1_0.txt
