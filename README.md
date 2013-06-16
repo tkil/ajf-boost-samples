@@ -17,3 +17,9 @@ Programs
 
 [regex-token-iter.cpp](regex-token-iter.cpp) - Uses the Boost.Regex
 iterator to scan through text in an HTML-like markup language.
+
+[unordered-set.cpp](unordered-set.cpp) - Demonstrates that storage
+order within unordered_set is indeed influenced by insertion order.
+Written after [Daniel James corrected me]
+(http://article.gmane.org/gmane.comp.lib.boost.user/78730) on the
+boost-users list.
