@@ -4,9 +4,11 @@
 CXXFLAGS += -O3
 LIBS += -lboost_chrono-mt -lboost_thread-mt -pthread
 
-.PHONY : all demo
+EXES := semaphore-boost semaphore-mutex semaphore-pthread
 
-all : semaphore-boost semaphore-mutex semaphore-pthread
+.PHONY : all demo clean
+
+all : $(EXES)
 
 semaphore-boost semaphore-mutex semaphore-pthread : semaphore.cpp
 	$(CXX) $(CXXFLAGS) -o $@ $< $(LIBS)
@@ -21,3 +23,6 @@ demo :
 	./semaphore-boost
 	./semaphore-mutex
 	./semaphore-pthread
+
+clean :
+	$(RM) $(EXES)
